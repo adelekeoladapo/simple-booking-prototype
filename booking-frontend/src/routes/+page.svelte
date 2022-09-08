@@ -3,8 +3,8 @@
     import type {IProductListItem} from "$lib/types/ProductListItem";
     import ProductListItem from "$lib/components/ProductListItem.svelte";
     import {onMount} from "svelte";
-    import {ProductService} from "../lib/services/product.service";
-    import {productFormDataStore} from "../lib/stores/store";
+    import {ProductService} from "$lib/services/product.service";
+    import {productFormDataStore} from "$lib/stores/store";
 
     let productList: IProductListItem[]
     const productService: ProductService = new ProductService()
